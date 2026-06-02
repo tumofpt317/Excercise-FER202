@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E08 - Form đặt vé máy bay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{background:#fff;font-family:Arial, Helvetica, sans-serif;}
+        .booking-box{width:485px;margin:28px auto 0;border:1px solid #222;background:#fff;}
+        .close-bar{height:24px;background:#fff4cf;color:#c7a044;font-size:20px;line-height:22px;padding-right:18px;text-align:right;}
+        .booking-body{padding:14px 14px 15px;}
+        h1{font-size:38px;font-weight:400;margin:0 0 10px;}
+        label{font-size:14px;margin-bottom:4px;}
+        .form-control,.form-select,.input-group-text{border-radius:0;font-size:14px;height:35px;}
+        .input-group-text{min-width:42px;justify-content:center;color:#777;}
+        .help-text{font-size:13px;color:#777;margin-top:4px;margin-bottom:8px;}
+        .form-check{min-height:21px;margin-bottom:0;}
+        .form-check-input{width:14px;height:14px;border-radius:0;margin-top:4px;}
+        .submit-btn{height:39px;border-radius:0;margin-top:10px;}
+    </style>
+</head>
+<body>
+    <div class="booking-box">
+        <div class="close-bar">X</div>
+        <div class="booking-body">
+            <h1>Form đặt vé máy bay</h1>
+            <form>
+                <div class="mb-1">
+                    <label class="form-label">Họ tên</label>
+                    <div class="input-group">
+                        <span class="input-group-text">♙</span>
+                        <input type="text" class="form-control" placeholder="Họ tên">
+                        <span class="input-group-text">vnd</span>
+                    </div>
+                    <div class="help-text">Phải nhập 5 ký tự, in hoa....</div>
+                </div>
+
+                <div class="mb-1">
+                    <label class="form-label">Địa chỉ</label>
+                    <input type="text" class="form-control">
+                    <div class="help-text">Phải nhập 5 ký tự, in hoa....</div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label class="form-label">Đi từ</label>
+                        <select class="form-select">
+                            <option>Hà nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>TP. Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Đến</label>
+                        <select class="form-select">
+                            <option>Hà nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>TP. Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label class="form-label mb-1">Chọn chiều đi (Khứ hồi)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="di">
+                    <label class="form-check-label" for="di">Đi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ve">
+                    <label class="form-check-label" for="ve">Về</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 submit-btn">Đặt vé</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

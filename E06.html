@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E06 - New Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{font-family:Arial, Helvetica, sans-serif;background:#fff;color:#333;}
+        .page-wrap{max-width:1200px;margin:0 auto;}
+        .top-nav{height:50px;display:flex;align-items:center;justify-content:space-between;}
+        .top-nav a{font-size:16px;margin-right:18px;}
+        .brand-text{color:#777;margin-right:20px;}
+        .search-box input{width:190px;height:31px;border:2px solid #222;padding-left:12px;}
+        .search-box button{height:31px;border:2px solid #222;background:#fff;padding:0 18px;}
+        .banner-img{width:100%;height:345px;object-fit:cover;display:block;}
+        .product-section{max-width:960px;margin:44px auto 0;}
+        .product-section h2{font-size:30px;font-weight:400;margin-bottom:2px;}
+        .product-section .sub{font-size:16px;color:#777;margin-bottom:18px;}
+        .product-card{position:relative;border:1px solid #ddd;border-radius:0;background:#fff;overflow:hidden;height:100%;}
+        .product-card img{width:100%;height:220px;object-fit:cover;display:block;}
+        .product-card .card-body{padding:12px 15px 14px;}
+        .product-card h5{font-size:20px;font-weight:400;margin:0 0 8px;}
+        .product-card p{font-size:16px;color:#777;margin-bottom:14px;}
+        .star-btn{width:42px;height:34px;border-radius:0;font-weight:bold;}
+        .price{color:#ff8a00;font-size:16px;white-space:nowrap;}
+        .sale-ribbon{position:absolute;top:0;right:0;width:0;height:0;border-top:65px solid #ff9900;border-left:65px solid transparent;z-index:2;}
+        .sale-ribbon span{position:absolute;top:-55px;right:3px;color:#fff;transform:rotate(45deg);font-size:18px;}
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <nav class="top-nav">
+            <div class="d-flex align-items-center">
+                <span class="brand-text">Navbar</span>
+                <a href="#">Home</a>
+                <a href="#">Link</a>
+                <a href="#">Dropdown</a>
+            </div>
+            <form class="search-box d-flex" action="#">
+                <input type="search" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+
+        <img src="img-banner.jpg" class="banner-img" alt="banner">
+
+        <section class="product-section">
+            <h2>NEW PRODUCT</h2>
+            <p class="sub">List product description</p>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="a1.png" alt="Product 1">
+                        <div class="card-body">
+                            <h5>Product</h5>
+                            <p>Product description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary star-btn">★</button>
+                                <span class="price">80.000 vnđ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="a2.png" alt="Product 2">
+                        <div class="card-body">
+                            <h5>Product</h5>
+                            <p>Product description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary star-btn">★</button>
+                                <span class="price">80.000 vnđ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="a3.png" alt="Product 3">
+                        <div class="card-body">
+                            <h5>Product</h5>
+                            <p>Product description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary star-btn">★</button>
+                                <span class="price">80.000 vnđ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="sale-ribbon"><span>Sale</span></div>
+                        <img src="a1.png" alt="Product 4">
+                        <div class="card-body">
+                            <h5>Product</h5>
+                            <p>Product description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary star-btn">★</button>
+                                <span class="price">80.000 vnđ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
